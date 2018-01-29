@@ -1,13 +1,6 @@
-workspace:
-  base: /pipeline
-  path: src
-
 pipeline:
-  build:
-    image: redis
+  backend:
+    image: golang
     commands:
-      - pwd
-
-services:
-  redis:
-    image: redis
+      - go build
+      - go test
