@@ -1,0 +1,13 @@
+workspace:
+  base: /pipeline
+  path: src
+
+pipeline:
+  build:
+    image: redis
+    commands:
+      - pwd
+
+services:
+  redis:
+    image: redis
