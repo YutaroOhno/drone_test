@@ -1,3 +1,6 @@
-script:
-  - echo 'start!'
-  - echo 'end!'
+build:
+  image: golang
+  commands:
+    - go get
+    - go build
+    - go test
