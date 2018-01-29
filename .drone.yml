@@ -1,5 +1,5 @@
 pipeline:
-    image: golang
-    commands:
-      - go build
-      - go test
+  image: golang
+  commands:
+    - go build
+    - go test
